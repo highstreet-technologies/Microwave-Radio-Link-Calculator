@@ -15,6 +15,14 @@
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_AeqAcHdREeWXmpMuTNE9ww" name="CalculationResult"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_D_FDIHdlEeWGsesMyRiKpA" name="IMwrLink"/>
+      <packagedElement xmi:type="uml:Realization" xmi:id="_tnGfEHdlEeWGsesMyRiKpA" client="_G6bxEHdREeWXmpMuTNE9ww" supplier="_D_FDIHdlEeWGsesMyRiKpA"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_wkTQAHdlEeWGsesMyRiKpA" name="ICalculationResult"/>
+      <packagedElement xmi:type="uml:Realization" xmi:id="_T4wcIHdmEeWGsesMyRiKpA" client="_AeqAcHdREeWXmpMuTNE9ww" supplier="_wkTQAHdlEeWGsesMyRiKpA"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_WAWMAHdsEeWGsesMyRiKpA" name="MwrLinkCalculator">
+        <packagedElement xmi:type="uml:Usage" xmi:id="_D8kBAHdtEeWGsesMyRiKpA" client="_WAWMAHdsEeWGsesMyRiKpA" supplier="_D_FDIHdlEeWGsesMyRiKpA"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_Q6yyAHdtEeWGsesMyRiKpA" name="provide" client="_WAWMAHdsEeWGsesMyRiKpA" supplier="_wkTQAHdlEeWGsesMyRiKpA"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oGgSMHdCEeWXmpMuTNE9ww">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oGtGgHdCEeWXmpMuTNE9ww" source="http://www.eclipse.org/uml2/2.0.0/UML">
