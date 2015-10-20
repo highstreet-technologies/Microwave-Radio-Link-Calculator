@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:java="http://www.eclipse.org/papyrus/JAVA/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Model xmi:id="_nHJG8HdCEeWXmpMuTNE9ww" name="microwave.radio.link.calculator.uml.model">
     <packagedElement xmi:type="uml:Package" xmi:id="_FIwGIHdTEeWXmpMuTNE9ww" name="com.highstreet.technologies.open.source.microwave.radio.link.calculator">
-      <packagedElement xmi:type="uml:Class" xmi:id="_G6bxEHdREeWXmpMuTNE9ww" name="MwrLink"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_G6bxEHdREeWXmpMuTNE9ww" name="MwrLinkInput"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_0DQ_IHdCEeWXmpMuTNE9ww" name="Calculation">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_c21-AHdREeWXmpMuTNE9ww" name="Calculation"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_VeiTsHdREeWXmpMuTNE9ww" name="calculate">
