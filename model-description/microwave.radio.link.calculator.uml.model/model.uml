@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:java="http://www.eclipse.org/papyrus/JAVA/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Model xmi:id="_nHJG8HdCEeWXmpMuTNE9ww" name="microwave.radio.link.calculator.uml.model">
     <packagedElement xmi:type="uml:Package" xmi:id="_FIwGIHdTEeWXmpMuTNE9ww" name="com.highstreet.technologies.open.source.microwave.radio.link.calculator">
-      <packagedElement xmi:type="uml:Class" xmi:id="_G6bxEHdREeWXmpMuTNE9ww" name="MwrLinkInput"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_G6bxEHdREeWXmpMuTNE9ww" name="CalculationInput"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_0DQ_IHdCEeWXmpMuTNE9ww" name="Calculation">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_c21-AHdREeWXmpMuTNE9ww" name="Calculation"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_VeiTsHdREeWXmpMuTNE9ww" name="calculate">
@@ -24,6 +24,203 @@
         <packagedElement xmi:type="uml:Realization" xmi:id="_Q6yyAHdtEeWGsesMyRiKpA" name="provide" client="_WAWMAHdsEeWGsesMyRiKpA" supplier="_wkTQAHdlEeWGsesMyRiKpA"/>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BOnisHfeEeWaPZ7CBBnTLw" name="com.highstreet.technologies.open.source">
+      <packagedElement xmi:type="uml:Class" xmi:id="_H3CBIHfeEeWaPZ7CBBnTLw" name="GeoLocation">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_n26vEHfnEeWaPZ7CBBnTLw" name="latitude" visibility="private">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_tvX98HfsEeWaPZ7CBBnTLw">
+            <body>The latitute value of a geographical point.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_wOd2kHfsEeWaPZ7CBBnTLw">
+            <body>Unit: &quot;′&quot;</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0uEOYHfsEeWaPZ7CBBnTLw">
+            <body>Label-id: LATITUDE</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_BZXcUHftEeWaPZ7CBBnTLw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_BZXcUXftEeWaPZ7CBBnTLw">
+              <body>Decimal places of 6 (value examle 0.123456) have an adequate accuracy in the contecxt of microwave radio links.
+
+decimal
+places   degrees          distance
+-------  -------          --------
+0        1                111  km
+1        0.1              11.1 km
+2        0.01             1.11 km
+3        0.001            111  m
+4        0.0001           11.1 m
+5        0.00001          1.11 m
+6        0.000001         11.1 cm
+7        0.0000001        1.11 cm
+8        0.00000001       1.11 mm</body>
+            </ownedComment>
+            <body>Precision: 6</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_o1xKsHfsEeWaPZ7CBBnTLw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qsP9cHfnEeWaPZ7CBBnTLw" name="longitude" visibility="private">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_UBecYHfsEeWaPZ7CBBnTLw">
+            <body>The longitude value of a geographical point.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_WqAk4HfsEeWaPZ7CBBnTLw">
+            <body>Unit: &quot;′&quot;</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ZoH70HfsEeWaPZ7CBBnTLw">
+            <body>Label-id: LONGITUDE</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_hrZ1wHfsEeWaPZ7CBBnTLw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_hrZ1wXfsEeWaPZ7CBBnTLw">
+              <body>Decimal places of 6 (value examle 0.123456) have an adequate accuracy in the contecxt of microwave radio links.
+
+decimal
+places   degrees          distance
+-------  -------          --------
+0        1                111  km
+1        0.1              11.1 km
+2        0.01             1.11 km
+3        0.001            111  m
+4        0.0001           11.1 m
+5        0.00001          1.11 m
+6        0.000001         11.1 cm
+7        0.0000001        1.11 cm
+8        0.00000001       1.11 mm</body>
+            </ownedComment>
+            <body>Precision: 6</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_k4Ns0HfoEeWaPZ7CBBnTLw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_r4DpQHfnEeWaPZ7CBBnTLw" name="aboveMeanSeaLevel" visibility="private">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_UQHSIHfoEeWaPZ7CBBnTLw">
+            <body>Please see: https://simple.wikipedia.org/wiki/Above_mean_sea_level.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_WKeGAHfoEeWaPZ7CBBnTLw">
+            <body>Unit: &quot;m&quot;</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Z4DyEHfoEeWaPZ7CBBnTLw">
+            <body>Label-id: AMSL</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cR8akHfoEeWaPZ7CBBnTLw">
+            <body>Precision: 2</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Aw45UHfoEeWaPZ7CBBnTLw"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_pT6AkHfeEeWaPZ7CBBnTLw" name="GeoLocation"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_66SBYHfeEeWaPZ7CBBnTLw" name="GeoLocation">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_HWPy0HffEeWaPZ7CBBnTLw" name="latitude">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qarl8HffEeWaPZ7CBBnTLw">
+              <body>The latitude value of a geographical point.</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uI_DsHffEeWaPZ7CBBnTLw">
+              <body>Unit: &quot;′&quot;</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0SQvEHffEeWaPZ7CBBnTLw">
+              <body>Label-id: LATITUDE</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_8yBJoHffEeWaPZ7CBBnTLw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_9lIzMHfgEeWaPZ7CBBnTLw" annotatedElement="_8yBJoHffEeWaPZ7CBBnTLw">
+                <body>Decimal places of 6 (value examle 0.123456) have an adequate accuracy in the contecxt of microwave radio links.
+
+decimal
+places   degrees          distance
+-------  -------          --------
+0        1                111  km
+1        0.1              11.1 km
+2        0.01             1.11 km
+3        0.001            111  m
+4        0.0001           11.1 m
+5        0.00001          1.11 m
+6        0.000001         11.1 cm
+7        0.0000001        1.11 cm
+8        0.00000001       1.11 mm</body>
+              </ownedComment>
+              <body>Precision: 6</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_eubaMHffEeWaPZ7CBBnTLw"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZJoC8HfhEeWaPZ7CBBnTLw" name="longitude">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ZJoC8XfhEeWaPZ7CBBnTLw">
+              <body>The longitude value of a geographical point.</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ZJoqAHfhEeWaPZ7CBBnTLw">
+              <body>Unit: &quot;′&quot;</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ZJoqAXfhEeWaPZ7CBBnTLw">
+              <body>Label-id: LONGITUDE</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_n6ufwHfhEeWaPZ7CBBnTLw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_n6ufwXfhEeWaPZ7CBBnTLw">
+                <body>Decimal places of 6 (value examle 0.123456) have an adequate accuracy in the contecxt of microwave radio links.
+
+decimal
+places   degrees          distance
+-------  -------          --------
+0        1                111  km
+1        0.1              11.1 km
+2        0.01             1.11 km
+3        0.001            111  m
+4        0.0001           11.1 m
+5        0.00001          1.11 m
+6        0.000001         11.1 cm
+7        0.0000001        1.11 cm
+8        0.00000001       1.11 mm</body>
+              </ownedComment>
+              <ownedComment xmi:type="uml:Comment" xmi:id="_1JGlkHfhEeWaPZ7CBBnTLw" annotatedElement="_n6ufwHfhEeWaPZ7CBBnTLw">
+                <body>Decimal places of 6 (value examle 0.123456) have an adequate accuracy in the contecxt of microwave radio links.
+
+decimal
+places   degrees          distance
+-------  -------          --------
+0        1                111  km
+1        0.1              11.1 km
+2        0.01             1.11 km
+3        0.001            111  m
+4        0.0001           11.1 m
+5        0.00001          1.11 m
+6        0.000001         11.1 cm
+7        0.0000001        1.11 cm
+8        0.00000001       1.11 mm</body>
+              </ownedComment>
+              <body>Precision: 6</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_ZJoqAnfhEeWaPZ7CBBnTLw"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_XMS-IHfiEeWaPZ7CBBnTLw" name=" aboveMeanSeaLevel">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XMS-IXfiEeWaPZ7CBBnTLw">
+              <body>Please see: https://en.wikipedia.org/wiki/Sea_level</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XMTlMHfiEeWaPZ7CBBnTLw">
+              <body>Unit: &quot;m&quot;</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XMTlMXfiEeWaPZ7CBBnTLw">
+              <body>Label-id: AMSL</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XMTlMnfiEeWaPZ7CBBnTLw">
+              <body>Precision: 2</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_XMTlM3fiEeWaPZ7CBBnTLw"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_gwJS8HfiEeWaPZ7CBBnTLw" name="toDegreesMinutesSeconds">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_lp7acHfkEeWaPZ7CBBnTLw">
+            <body>The method converts longitude and latitude to a string in &quot;Degree-Minutes-Seconds&quot; format.
+Example: 52° 00' 56.4250&quot; N | 6° 59' 03.8315&quot; E
+Please note:
+- leading zero for minites
+- leading zero for seconds
+- seconds formated with 4 decimal spaces
+</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ixVVUHfnEeWaPZ7CBBnTLw" name="result" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oGgSMHdCEeWXmpMuTNE9ww">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oGtGgHdCEeWXmpMuTNE9ww" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
@@ -36,4 +233,11 @@
   <java:JavaMethod xmi:id="_2SstUHdREeWXmpMuTNE9ww" isConstructor="true" base_Operation="_c21-AHdREeWXmpMuTNE9ww"/>
   <java:JavaClass xmi:id="_4VxYUHdREeWXmpMuTNE9ww" base_Classifier="_AeqAcHdREeWXmpMuTNE9ww"/>
   <java:JavaClass xmi:id="_66Vm0HdREeWXmpMuTNE9ww" base_Classifier="_G6bxEHdREeWXmpMuTNE9ww"/>
+  <java:JavaClass xmi:id="_V0ezcHfeEeWaPZ7CBBnTLw" base_Classifier="_H3CBIHfeEeWaPZ7CBBnTLw"/>
+  <java:JavaMethod xmi:id="_1cpUAHfeEeWaPZ7CBBnTLw" isConstructor="true" base_Operation="_pT6AkHfeEeWaPZ7CBBnTLw"/>
+  <java:JavaMethod xmi:id="_8xCHoHfeEeWaPZ7CBBnTLw" isConstructor="true" base_Operation="_66SBYHfeEeWaPZ7CBBnTLw"/>
+  <java:JavaMethod xmi:id="_yeG3kHfkEeWaPZ7CBBnTLw" base_Operation="_gwJS8HfiEeWaPZ7CBBnTLw"/>
+  <java:JavaProperty xmi:id="_yu1T0HfnEeWaPZ7CBBnTLw" base_Property="_qsP9cHfnEeWaPZ7CBBnTLw"/>
+  <java:JavaProperty xmi:id="_0pH2QHfnEeWaPZ7CBBnTLw" base_Property="_n26vEHfnEeWaPZ7CBBnTLw"/>
+  <java:JavaProperty xmi:id="_2dU-0HfnEeWaPZ7CBBnTLw" base_Property="_r4DpQHfnEeWaPZ7CBBnTLw"/>
 </xmi:XMI>
